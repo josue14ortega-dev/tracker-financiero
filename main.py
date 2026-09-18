@@ -11,5 +11,5 @@ def cargar_datos():
 
 
 def guardar_datos(transaccion):
-    respuesta = supabase.table('transaccion').insert(transaccion).execute()
+    respuesta = supabase.table('transacciones').insert(transaccion).execute()
     return respuesta
